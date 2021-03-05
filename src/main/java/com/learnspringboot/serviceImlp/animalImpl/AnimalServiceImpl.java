@@ -12,11 +12,11 @@ public class AnimalServiceImpl implements IAnimal {
 
     @Override
     public void run() {
-
+        System.out.println("狗爱跑、兔子爱跳");
     }
 
     @Override
     public void say() {
-
+        System.out.println("小狗汪汪汪、小猫喵喵喵");
     }
 }
