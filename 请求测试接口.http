@@ -1,0 +1,49 @@
+GET http://localhost:9002/api/v1/person/getRealPersonM1?type=women
+Accept: application/json
+
+###
+
+GET http://localhost:9002/api/v1/person/getRealPersonM2/man
+Accept: application/json
+
+###
+
+POST http://localhost:9002/api/v1/person/setPersonTypeM2?type=she-males&description=长得像女人
+Accept: application/json
+
+###
+
+POST http://localhost:9002/api/v1/person/setPersonTypeM1
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"type":"she-males", "description":"长得像女人"}
+
+###
+
+
+
+#=====================================访问树莓派docker=========================================#
+GET http://raspberryvip.wicp.vip:25376/api/v1/person/getRealPersonM1?type=women
+Accept: application/json
+
+###
+
+GET http://raspberryvip.wicp.vip:25376/api/v1/person/getRealPersonM2/man
+Accept: application/json
+
+
+###
+
+POST http://raspberryvip.wicp.vip:25376/api/v1/person/setPersonTypeM2?type=she-males&description=长得像女人
+Accept: application/json
+
+###
+
+POST http://raspberryvip.wicp.vip:25376/api/v1/person/setPersonTypeM1
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"type":"she-males", "description":"长得像女人"}
