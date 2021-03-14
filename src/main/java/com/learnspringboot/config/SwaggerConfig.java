@@ -26,7 +26,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableKnife4j
 public class SwaggerConfig {
     // swagger开关，开发环境开启，生产环境关闭
-    @Value("${swagger.enabled}")
+    @Value("${knife4j.enabled}")
     private boolean enableSwagger;
 
     @Bean
